@@ -3,7 +3,7 @@
 
 This document defines the FTC Sample OpMode and Class conventions.
 
-### OpMode Name
+#0## OpMode Name
 
 A range of different samples classes will reside in the java/external/samples folder.
 
