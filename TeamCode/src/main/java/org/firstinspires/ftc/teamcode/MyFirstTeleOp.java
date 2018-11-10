@@ -3,14 +3,16 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
+import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
 
-@TeleOp(name = "TeleOp")
+
+@TeleOp(name = "TeleOp", group = "TeleOp")
 public class MyFirstTeleOp extends LinearOpMode
 
 {
-    public DcMotor MotorLeft;
-    public DcMotor MotorRight;
+    private DcMotor MotorLeft;
+    private DcMotor MotorRight;
     @Override
     public void runOpMode() {
 
@@ -27,7 +29,8 @@ public class MyFirstTeleOp extends LinearOpMode
             MotorRight.setPower(-gamepad1.right_stick_y);
 
             idle();
-    }
+        }
 
+    }
 }
-}
+
