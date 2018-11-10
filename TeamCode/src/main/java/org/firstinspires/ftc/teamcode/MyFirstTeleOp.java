@@ -12,7 +12,7 @@ public class MyFirstTeleOp extends LinearOpMode
     public DcMotor MotorLeft;
     public DcMotor MotorRight;
     @Override
-    public void runOpMode(){
+    public void runOpMode() {
 
         MotorLeft = hardwareMap.dcMotor.get("MotorLeft");
         MotorRight = hardwareMap.dcMotor.get("MotorRight");
@@ -24,7 +24,7 @@ public class MyFirstTeleOp extends LinearOpMode
         {
 
             MotorLeft.setPower(-gamepad1.left_stick_y);
-            MotorRight.setPower(-gamepad1.left_stick_y);
+            MotorRight.setPower(-gamepad1.right_stick_y);
 
             idle();
     }
